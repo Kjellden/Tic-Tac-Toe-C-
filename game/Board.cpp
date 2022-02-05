@@ -15,12 +15,12 @@ class board{
             cout << placement[6] << " | " << placement[7] << " | " << placement[8] << endl;
         }
         void placeSymbol(string symbol){
-            int placeSymble;
             string column;
             bool place = false;
 
             while (place == false){
-                cout << "What place would you like:";
+                int placeSymble;
+                cout << "What place would you like: ";
                 cin >> placeSymble;
 
                 if( placeSymble - 1 > 8 | placeSymble - 1 < 0){
